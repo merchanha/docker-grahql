@@ -27,10 +27,12 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t henrymerchan/docker-graphql:0.0.2 .
+        docker build -t henrymerchan/docker-graphql:latest .
         
     - name: Push Docker image
       run: |
         docker push henrymerchan/docker-graphql:0.0.2
+        docker push henrymerchan/docker-graphql:latest
        
     
      
